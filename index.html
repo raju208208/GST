@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <div class="menubar">
+                <div class="menu">
+                    <a href="#home" class="links">Home</a>
+                    <a href="#about" class="links">About</a>
+                    <a href="#contact" class="links">Contact</a>
+                    <a href="#services" class="links">Services</a>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+
+            <div class="logo">
+                <img src="./images/barbeque.jpg" alt="">
+            </div>
+        </div>
+        <div class="content" id="about">
+            <h1>BARBEQUE</h1>
+            <img src="./images/barbeque.jpg" alt="atm" id="image">
+            <h2>Explore Nearby Restaurants</h2>
+            <p>Explore BBQ Restaurants near your Neighbourhood and <span></span> enjoy our latest cuisines with our
+                exlusive offers and coupons</p>
+            </h2>
+        </div>
+
+    </div>
+
+    <!-- ************************************************************************************* -->
+
+    <div class="bill" id="services">
+
+        <h1>Person Details</h1>
+
+        <div class="field">
+            <h1>Name</h1>
+            <input type="text" id="name" placeholder="Enter name">
+        </div>
+
+        <div class="field">
+            <h1>phone</h1>
+            <input type="phone" id="mobile" placeholder="Enter phone No">
+        </div>
+
+        <div class="field">
+            <h1>Email</h1>
+            <input type="email" id="email" placeholder="Enter email">
+        </div>
+
+        <div class="field">
+            <h1>Place</h1>
+            <input type="address" id="address" placeholder="Enter address">
+        </div>
+
+        <h1>Menu Items</h1>
+
+        <div class="field">
+            <h1>Starters</h1>
+            <input type="text" id="starters" placeholder="Enter the Amount">
+        </div>
+
+        <div class="field">
+            <h1>Chicken</h1>
+            <input type="text" id="main_course" placeholder="Enter the Amount">
+        </div>
+
+        <div class="field">
+            <h1>Burgers</h1>
+            <input type="text" id="indian_food" placeholder="Enter the Amount">
+        </div>
+
+        <div class="field">
+            <h1>Chinese</h1>
+            <input type="text" id="chinese" placeholder="Enter the Amount">
+        </div>
+
+        <div class="field">
+            <h1>Biryani</h1>
+            <input type="text" id="dessert" placeholder="Enter the Amount">
+        </div>
+
+        <div class="field">
+            <h1>GST(%)</h1>
+            <input type="text" id="GST" placeholder="Enter the GST(%)">
+        </div>
+
+
+        <button id="payment" onclick="calculate()">
+            <h2>Payment</h2>
+        </button>
+
+        <h1 id="answer"></h1>
+
+        <h1 id="final"></h1>
+
+    </div>
+
+
+
+
+    <!-- ************************************************************************************* -->
+
+    <div class="footer" id="contact">
+        <div class="info">
+            <h1>Contact Information</h1>
+        </div>
+
+        <div class="social">
+            <div class="footer_info">
+                <div class="logo1">
+                    <img src="./images/barbeque.jpg" alt="">
+                </div>
+                <div class="foot_cont">
+                    <div class="ha">
+                        <h1>HOME</h1>
+                        <h1>ABOUT</h1>
+                    </div>
+                    <div class="cs">
+                        <h1>CONTACT</h1>
+                        <h1>SERVICES</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="symbol">
+                <img src="./images/google.png" alt="">
+                <img src="./images/facebook.png" alt="">
+                <img src="./images/gmail.png" alt="">
+                <img src="./images/twitter.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>

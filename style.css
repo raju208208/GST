@@ -1,0 +1,464 @@
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+h1, h2, a, p, span, button, input{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    display: block;
+}
+
+
+/* ***************************  navbar  ******************************** */
+
+.container .navbar{
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container .navbar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container .navbar .logo img{
+    width:150px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    
+}
+
+@keyframes spin{
+
+
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+.container .navbar .menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap:50px;
+
+}
+
+
+.menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:20px;
+}
+
+.container .navbar .menubar .menu a{
+    font-size: 25px;
+    color: white;
+}
+
+.links:hover {
+    cursor: pointer;
+    animation: text-clear 1s linear infinite;
+}
+
+
+@keyframes text-clear{
+    from{color: white;}
+    to{color:gold;}
+}
+
+.burger{
+    display: none;
+}
+
+.menubar .burger div{
+    height:7px;
+    width:30px;
+    margin: 5px;
+    background-color: gold;
+}
+
+
+/* ************************* about *********************************** */
+
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:40px;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding : 60px 0px;
+}
+
+.container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    padding:0px;
+    
+}
+
+.container .content h1{
+    text-align: center;
+    color: gold;
+    font-size: 45px;
+  }
+
+
+.container .content h2{
+    color: gold;
+    font-size: 25px;
+}
+
+.container .content img{
+    width:360px;
+    height:360px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    
+}
+
+@keyframes spin{
+
+
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.container .content p{
+    text-align: center;
+    font-size: 25px;
+    opacity:0.8;
+    color: white;
+}
+
+
+/* ************************* bill payment  ************************************ */
+
+
+.bill{
+    width:100%;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+    padding:80px 0px; 
+    border-top:5px solid gold;
+}
+
+.field{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:50px;
+    margin: 0 auto;
+
+}
+
+input{
+
+    width:60%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 30px;
+
+
+}
+
+.field h1{
+    font-size: 20px;
+}
+
+#payment{
+    width: 38%;
+    font-size: 20px;
+    color: black;
+    border: 3px solid darkred;
+    border-radius: 35px;
+    padding: 15px 30px;
+    background-color: gold;
+}
+
+.bill h1{
+    color: gold;
+}
+
+#answer{
+    border-radius: 10px;
+    color:darkred;
+    text-align: center;
+    background-color: gold;
+}
+
+#final{
+    width:100%;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/* ******************************* footer ************************************* */
+
+
+.footer{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkred;
+    gap :50px;
+    padding:40px 0px;
+    border-top:5px solid gold;
+}
+
+.footer .logo1 img{
+    width:150px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    
+}
+
+@keyframes spin{
+
+
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+.footer .info h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: gold;
+    text-align: center;
+}
+
+.footer .social{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer_info{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding:0px 50px;
+    gap:50px;
+}
+
+.footer_info .foot_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:50px;
+}
+
+
+.footer .symbol{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:50px;
+}
+
+.footer .ha,.footer .cs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.footer .ha h1,.footer .cs h1{
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: gold;
+}
+
+
+
+.footer .symbol img{
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: spin 4s linear infinite;
+    
+}
+
+@keyframes spin{
+
+
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+/* *************************** media queries  ********************************************* */
+
+
+
+@media(max-width:1000){
+
+}
+
+@media(max-width:900px){
+
+    .menu{
+        position: absolute;
+        right:0;
+        top : 20vh;
+        width:100%;
+        height: 85vh;
+        z-index: 99999999;
+        background-color: gold;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);   
+        
+
+    }
+
+    .container .navbar .menubar .menu a{
+        font-size: 40px;
+        color: darkred;
+    }
+
+    .nav-active{
+        transform: translateX(0);
+        transition : all 0.5s ease-in;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .container .content img{
+        width:350px;
+        height:350px;
+    }
+
+
+    .container .content h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .container .content p{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container .content h1{
+        font-size: 40px;
+    }
+
+    .footer .social{
+        flex-direction: column;
+        gap:50px;
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-10px, 7px);
+    }
+
+    .toggle .line2{
+        opacity:0;
+    }
+
+    .toggle .line3{
+        transform: rotate(45deg) translate(-10px, -7px);
+    }
+
+}
+
+@media(max-width:650px){
+    .container .content img{
+        width:250px;
+        height:250px;
+    }
+
+    .footer_info{
+        flex-direction: column;
+        gap:50px;
+    }
+
+    .footer_info .foot_cont{
+        flex-direction: column;
+        gap:50px;
+    }
+
+}
+
+@media(max-width:400px){
+    .footer .symbol{
+        flex-direction: column;
+    }
+}
+
+/* ************************************************ */
+
+
